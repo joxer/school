@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+    <title>Calcolo dell'aread di triangolo e rettangolo</title>
+    <script>
+    var h, b, l1, l2 , P, A;
+
+    var lati = parseInt(prompt("inserisci il numero di lati", ""));
+
+    if(lati == 3){
+
+    b = parseInt(prompt("inserisci la base", ""));
+    h = parseInt(prompt("inserisci l'altezza", ""));
+    
+    l1 = parseInt(prompt("inserisci il valore del primo lato obliquo"));
+    l2 = parseInt(prompt("inserisci il valore del secondo lato obliquo"))
+    
+    A = b * h;
+    P = b + l1 + l2;
+    alert("L'area del triangolo e':"+A+" e il perimetro e':"+P);
+    }else if(lati == 4){
+    
+    b = parseInt(prompt("inserisci la base", ""));
+    h = parseInt(prompt("inserisci l'altezza", ""));
+    
+    A = b*h;
+    P = b*2+h*2;
+
+    alert("L'area del rettangolo:"+A+" e il perimetro e':"+P);
+    
+    }else{
+
+    alert("hai inserito un valore maggiore o minore di 4 di lati");
+
+    };
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

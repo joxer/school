@@ -1,0 +1,25 @@
+<html>
+
+  <head>
+    <script>
+    var finestra = 2;
+    
+    var altezza = parseInt(prompt("scrivi l'altezza dell'aula", ""));
+    var lunghezza1 = parseInt(prompt("scrivi l'altezza della parete", ""));
+    var lunghezza2 = parseInt(prompt("scrivi l'altezza dell'altra parete", ""));
+    var fin = parseInt(prompt("scrivi il numero di finestre", ""));
+    
+    var porta = 2;
+    var area1 = lunghezza2 * altezza - porta;
+    var area2 = lunghezza1 * altezza;
+    var soffitto = lunghezza2 * lunghezza1 ;
+    var area3 = lunghezza2 * altezza - finestra * fin;
+    
+    alert("devi dipingere:" + (area1+area2*2+soffitto+area3) + "metri quadri" );
+    </script>
+  </head>
+  
+  <body>
+    
+  </body>
+</html>
