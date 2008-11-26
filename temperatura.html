@@ -1,0 +1,39 @@
+<html>
+    <head>
+     <script>
+    
+var temperatura, N, sc, sm, c, temp;
+
+N = parseInt(prompt("inserisci il numero di volte per fare la misurazione", ""));
+
+c = 1;
+sc = 1;
+sm = 0;
+
+temperatura = parseFloat(prompt("inserisci temperatura", ""));
+
+while(c < N){
+
+    cont += 1;
+    temp = parseFloat(prompt("inserisci temperatura", ""));
+    if(temperatura > temp){
+
+	sc += 1;
+	
+	
+    }else{
+
+	if(sc > sm){
+
+	    sm = sc
+	}
+	
+    }
+    temp = temperatura;
+
+}
+alert("la temperatura max è:"+sm);
+
+</script>
+    </head>
+    </html>
